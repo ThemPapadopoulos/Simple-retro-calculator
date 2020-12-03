@@ -1,0 +1,126 @@
+* {
+      box-sizing: border-box; 
+  }
+
+  body{
+        background-color:black;
+        width: max-content;
+        
+  }
+
+  #calculator{
+      background: rgb(97,97,97);
+background: linear-gradient(202deg, rgba(97,97,97,0.9612219887955182) 0%, rgba(93,92,92,0.9528186274509804) 11%, rgba(89,87,87,0.9500175070028011) 25%, rgba(78,75,75,0.908000700280112) 45%, rgba(78,76,76,1) 65%, rgba(79,78,78,1) 79%, rgba(80,80,80,0.9556197478991597) 100%);
+      border-radius: 10px;
+      box-shadow: 2px 2px 3px white;
+          
+  }
+  #display{
+        margin: 5px;
+      border-radius: 10px;
+        background-color: #bccd95;
+        font-size: 40px;
+        height: 13vh;
+        text-align:right;
+  }
+
+
+
+  #image{
+      box-shadow: 2px 2px black;
+      margin-right: 10px;
+  }
+
+/* lines */
+
+#main_line{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+}
+
+  #first_line {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+  }
+  #second_line {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+  }
+  #third_line {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+  }
+  #fourth_line {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 10vh;
+      
+  }
+  
+/*!on click buttons*/
+
+.buttons:hover {
+      background: lightgray;
+
+    }
+.buttons:active {
+      font-size: 120%;
+      width: 13%;
+      height: 10%;
+      height: auto;
+    }
+.buttons{
+      width:60px;  
+      height:40px;  
+      border:none;
+      background-color: antiquewhite;  
+      border-radius:8px;  
+      margin-left:10px;  
+      cursor:pointer;  
+      border-top:2px solid transparent;
+      font-size: large;
+      font-weight: 900;
+      border-bottom:black 2px solid;  
+      border-top:2px rgba(48, 45, 45, 0.829) solid; 
+}  
+  
+  #clear{
+        background-color: rgb(126, 53, 53);
+        color: white;
+  }
+  #result{
+       
+            color:white;  
+            background-color:rgb(189, 142, 54);  
+            border-bottom:black 2px solid;  
+            border-top:2px rgba(48, 45, 45, 0.829) solid;              
+  }
+ 
+ 
+  @media only screen and (max-width: 600px) {
+      
+      body {
+        font-size: 16px;
+        width: 100%;
+         
+  }
+      #display{
+            margin: 5px;
+          border-radius: 10px;
+            background-color: #bccd95;
+            font-size: 30px;
+            text-align:right; 
+  }
+
+  
+  }
+  
