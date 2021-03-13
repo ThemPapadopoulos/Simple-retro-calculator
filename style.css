@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+body {
+  background-color: black;
+  width: max-content;
+}
+
+#calculator {
+  background: linear-gradient(
+    202deg,
+    rgba(97, 97, 97, 0.9612219887955182) 0%,
+    rgba(93, 92, 92, 0.9528186274509804) 11%,
+    rgba(89, 87, 87, 0.9500175070028011) 25%,
+    rgba(78, 75, 75, 0.908000700280112) 45%,
+    rgba(78, 76, 76, 1) 65%,
+    rgba(79, 78, 78, 1) 79%,
+    rgba(80, 80, 80, 0.9556197478991597) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px whitesmoke;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+#display {
+  margin: 0.5rem;
+  border-radius: 10px;
+  background-color: #bccd95;
+  font-size: 2.5rem;
+  height: 5rem;
+  width: 21rem;
+  text-align: right;
+  font-family: "Orbitron", sans-serif;
+  box-shadow: inset 2px 2px 3px whitesmoke;
+}
+
+#image {
+  box-shadow: 2px 2px black;
+  width: 6rem;
+}
+#image1 {
+  margin: auto 20px;
+  width: 6rem;
+  padding: 0;
+  margin-left: 20px;
+}
+/* lines */
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+}
+
+/*!on click buttons*/
+
+.buttons:hover {
+  background: lightgray;
+}
+.buttons:active {
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+.buttons {
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+  width: 4rem;
+  height: 3rem;
+  border: none;
+  background: antiquewhite;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 900;
+  border-bottom: black 2px solid;
+  border-top: 2px rgba(48, 45, 45, 0.829) solid;
+}
+
+#clear {
+  background-color: rgb(126, 53, 53);
+  color: whitesmoke;
+}
+#result {
+  color: white;
+  background-color: rgb(189, 142, 54);
+  border-bottom: black 2px solid;
+  border-top: 2px rgba(48, 45, 45, 0.829) solid;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    overflow-x: hidden;
+    margin: 50px auto;
+  }
+}
